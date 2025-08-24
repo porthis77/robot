@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+pytestdebug.log
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pyright/
+
+# Environments
+.env
+.env.*
+.venv
+venv/
+ENV/
+env/
+.conda/
+.python-version
+.direnv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+Thumbs.db
+ehthumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+tmp/
+
+# Project outputs
+out/
+outputs/
+build_artifacts/
+
+# Docker (optional)
+docker-data/
+docker-compose.override.yml
+*.pid
+*.pid.lock
+
+# Local overrides
+*.local
+*.secret
+secrets/

@@ -1,0 +1,48 @@
+# Pre-PLACE commands must be ignored
+MOVE
+LEFT
+REPORT
+
+# Invalid/ignored PLACE attempts (off table or malformed)
+PLACE 5,5,NORTH
+PLACE -1,0,EAST
+PLACE 1,2
+
+# First valid PLACE
+place 0,0,north
+REPORT
+MOVE
+REPORT
+LEFT
+MOVE        # would go off-table -> ignored
+REPORT
+LEFT
+MOVE
+REPORT
+MOVE        # would go off-table -> ignored
+RIGHT
+RIGHT
+MOVE
+RIGHT
+MOVE
+MOVE
+REPORT
+
+# Re-PLACE to a corner and test edge
+PLACE 4,4,EAST
+MOVE        # off-table -> ignored
+RIGHT
+MOVE
+RIGHT
+MOVE
+REPORT
+
+# Re-PLACE with mixed casing + tab whitespace
+PLACE	2,2,west
+RIGHT
+MOVE
+LEFT
+MOVE
+LEFT
+MOVE
+REPORT
